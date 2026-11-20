@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f2418"/>
+      <stop offset="0.55" stop-color="#4a3520"/>
+      <stop offset="1" stop-color="#24332f"/>
+    </linearGradient>
+    <radialGradient id="glow5" cx="0.5" cy="0.15" r="0.8">
+      <stop offset="0" stop-color="#ffd18a" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ffd18a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bag5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98b4e"/>
+      <stop offset="1" stop-color="#8a5428"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="270" fill="url(#bg5)"/>
+  <rect width="480" height="270" fill="url(#glow5)"/>
+
+  <text x="240" y="52" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffe7a8">РЕСПУБЛИКА БИРКИН</text>
+  <text x="240" y="82" text-anchor="middle" font-size="24" font-weight="bold" fill="#ffe7a8">ВСЁ ПОМЕСТИТСЯ</text>
+
+  <!-- сумка -->
+  <g transform="translate(240 184)">
+    <path d="M-62 -34 Q-62 -76 0 -76 Q62 -76 62 -34" fill="none" stroke="#e0ab6a" stroke-width="9" stroke-linecap="round"/>
+    <rect x="-90" y="-38" width="180" height="92" rx="20" fill="url(#bag5)" stroke="#e0ab6a" stroke-width="3"/>
+    <path d="M-90 -14 Q0 18 90 -14" fill="none" stroke="#e0ab6a" stroke-width="3" opacity="0.8"/>
+    <rect x="-18" y="-8" width="36" height="22" rx="7" fill="#ffe7a8" stroke="#b98f38" stroke-width="2"/>
+    <circle cx="0" cy="2" r="4" fill="#8a5428"/>
+    <!-- бирка -->
+    <g transform="translate(68 6)">
+      <animateTransform attributeName="transform" type="rotate" values="-6;6;-6" dur="3.4s" repeatCount="indefinite"/>
+      <rect x="-13" y="0" width="26" height="18" rx="4" fill="#fff7e8" stroke="#b98f38" stroke-width="2"/>
+      <text x="0" y="13" text-anchor="middle" font-size="9" fill="#8a5428">BIRKIN</text>
+    </g>
+  </g>
+
+  <!-- искры -->
+  <g fill="#ffe7a8">
+    <g transform="translate(132 126)">
+      <path d="M0 -13 L3 -3 L13 0 L3 3 L0 13 L-3 3 L-13 0 L-3 -3 Z">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="2.2s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="0.7;1.15;0.7" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g transform="translate(354 142)">
+      <path d="M0 -11 L2.5 -2.5 L11 0 L2.5 2.5 L0 11 L-2.5 2.5 L-11 0 L-2.5 -2.5 Z">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1.1;0.7;1.1" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <circle cx="150" cy="206" r="3">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="214" r="2.5">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <text x="240" y="250" text-anchor="middle" font-size="13" fill="#ffe7a8" opacity="0.72">подарки, планы и немножко меня</text>
+</svg>

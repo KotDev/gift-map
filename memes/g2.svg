@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102535"/>
+      <stop offset="0.6" stop-color="#183b4a"/>
+      <stop offset="1" stop-color="#1c2a3c"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.15" r="0.8">
+      <stop offset="0" stop-color="#9fe3ff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#9fe3ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="480" height="270" fill="url(#bg2)"/>
+  <rect width="480" height="270" fill="url(#glow2)"/>
+
+  <text x="240" y="58" text-anchor="middle" font-size="25" font-weight="bold" fill="#bfefff">СМОТРЮ В КНИГУ —</text>
+  <text x="240" y="90" text-anchor="middle" font-size="25" font-weight="bold" fill="#bfefff">ВИЖУ ФИГУ</text>
+
+  <!-- книга -->
+  <g transform="translate(240 182)">
+    <path d="M-112 0 Q-58 -18 0 -4 L0 50 Q-58 36 -112 54 Z" fill="#f6ead4" stroke="#b98f5a" stroke-width="2"/>
+    <path d="M112 0 Q58 -18 0 -4 L0 50 Q58 36 112 54 Z" fill="#fff7e8" stroke="#b98f5a" stroke-width="2"/>
+    <path d="M0 -4 L0 50" stroke="#b98f5a" stroke-width="2"/>
+    <g stroke="#c9b79a" stroke-width="2" stroke-linecap="round">
+      <path d="M-92 14 L-22 6"/>
+      <path d="M-92 25 L-22 17"/>
+      <path d="M-92 36 L-52 31"/>
+      <path d="M22 6 L92 14"/>
+      <path d="M22 17 L92 25"/>
+      <path d="M52 31 L92 36"/>
+    </g>
+  </g>
+
+  <!-- фига на странице -->
+  <g transform="translate(292 196)">
+    <ellipse cx="0" cy="0" rx="13" ry="17" fill="#8b5aa6" stroke="#5c3575" stroke-width="2"/>
+    <path d="M0 -16 Q2 -26 12 -28" stroke="#5c3575" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M12 -28 Q17 -31 20 -27 Q15 -25 12 -28" fill="#5c9a62"/>
+  </g>
+
+  <!-- очки, которые наконец надеваются -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0; 0,0; 0,0; -150,0" dur="5s" repeatCount="indefinite" keyTimes="0;0.22;0.72;0.9;1"/>
+    <g transform="translate(240 154)" fill="none" stroke="#ffd18a" stroke-width="5" stroke-linecap="round">
+      <circle cx="-42" cy="0" r="27" fill="#bfefff" fill-opacity="0.08"/>
+      <circle cx="42" cy="0" r="27" fill="#bfefff" fill-opacity="0.08"/>
+      <path d="M-15 0 L15 0"/>
+      <path d="M-69 -5 L-96 -16"/>
+      <path d="M69 -5 L96 -16"/>
+      <animate attributeName="opacity" values="0.25;1;1;1;0.25" dur="5s" repeatCount="indefinite" keyTimes="0;0.22;0.72;0.9;1"/>
+    </g>
+  </g>
+
+  <text x="240" y="246" text-anchor="middle" font-size="13" fill="#bfefff" opacity="0.72">с линзами фига превращается в фигуру</text>
+</svg>
